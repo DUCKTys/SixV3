@@ -162,8 +162,6 @@ async function connectionUpdate(update) {
   }
   
   if (global.db.data == null) loadDatabase()
-  console.log(JSON.stringify(update, null, 4))
-  if (update.receivedPendingNotifications) conn.sendMessage('120363218986141237@g.us', { text: 'Bot Online'})
 }
 
 
